@@ -18,7 +18,7 @@
               
           </ul>
             {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-              <select name="langSwitcher" onchange="location = this.value;">
+              <select name="langSwitcher" class="langSwitcher" onchange="location = this.value;">
                 <option selected disabled>Choose language ({{ page.lang }})</option>
                 {% for page in pages %} 
                   <option value="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</option> {% endfor %}
