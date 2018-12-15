@@ -1,7 +1,7 @@
   <div class="tm-navbar-container">
     <div class="uk-position-relative uk-text-center">
       <div class="tm-navbar-left uk-flex uk-flex-middle">
-        <a class="tm-logo-small uk-hidden-small" href="./"><img src="{{ site.images.logo }}" width="175" height="70" alt="Demo"></a>
+        <a class="tm-logo-small" href="./"><img src="{{ site.images.logo }}" width="175" height="70" alt="Demo"></a>
       </div>
       <nav class="tm-navbar uk-navbar">
             <ul class="uk-navbar-nav uk-large">
@@ -18,6 +18,7 @@
               
               {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
               <select name="langSwitcher" onchange="location = this.value;">
+              <option selected disabled>Choose language ({{ page.lang }})</option>
               {% for page in pages %} 
               <option value="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</option> {% endfor %}
               </select>
