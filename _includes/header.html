@@ -1,0 +1,17 @@
+    <header class="img-banner" style="background-image: url('{% if page.image %}{{ page.image }}{% else %}{{ site.images.banner }}{% endif %}')">
+      <div class="uk-container uk-container-center" style="background:none">   
+          <div class="header-title">
+              <h1 class="padded-multiline "><span>{{ site.event.title }} </span></h1>
+              <p class="padded-multiline "><span><strong>{{ site.event.subtitle.en }}</strong></span></p>
+              <p class="padded-multiline "><span>{{ site.event.dates }}</span></p>
+              </div>
+          </div>
+  </header>
+
+
+
+
+    <!---<img class="img-banner" src="./assets/banner.jpg">--->
+  
+<!--<img class="img-banner" src="{% if page.image %}{{ page.image }}{% else %}{{ site.images.banner }}{% endif %}">  -->  
+  

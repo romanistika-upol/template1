@@ -6,14 +6,9 @@
 
   <body data-rsssl=1 class="home page-template-default page page-id-30 tm-isblog wp-front_page wp-page wp-page-30 tm-article-blog cookies-not-set woocommerce-no-js tribe-no-js">
     {% include nav.html %}
+    
+    {% include header.html %}
 
-    <title>{% if page.image %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
-
-
-    <!---<img class="img-banner" src="./assets/banner.jpg">--->
-  
-<img class="img-banner" src="{% if page.image %}{{ page.image }}{% else %}{{ site.images.banner }}{% endif %}">    
-  
     <div class="uk-container uk-container-center">
       <section class="tm-top-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
         <div class="uk-width-1-1 uk-width-medium-1-1 uk-row-first"><div class="uk-panel uk-panel-box widget_text">
