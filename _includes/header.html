@@ -1,4 +1,5 @@
     <header class="img-banner" style="background-image: url('{% if page.image %}{{ page.image }}{% else %}{{ site.images.banner }}{% endif %}')">
+    {% if site.header %}
       <div class="uk-container uk-container-center" style="background:none">   
           <div class="header-title">
               <h1 class="padded-multiline "><span>{{ site.event.title }} </span></h1>
@@ -6,6 +7,7 @@
               <p class="padded-multiline "><span>{{ site.event.dates }}</span></p>
               </div>
           </div>
+    {% endif %}
   </header>
 
 
